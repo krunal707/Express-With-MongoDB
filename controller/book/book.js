@@ -130,7 +130,7 @@ function getOne(req, res) {
     // console.log("String: ", params)
     bookSchmea.findOne({ author: temp }, function (err, result) {
     // bookSchmea.find({ author: temp }, function (err, result) {
-       /// console.log("abc", result)
+        console.log("abc", result)
         if (err) {
             console.log("err", err)
             res.json({ code: 400, message: "something went wrong" })
